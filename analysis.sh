@@ -61,6 +61,7 @@ mkdir -p 16_combined_polish_data
 python3 "$python_script_dir"/read_table.py 01_raw_fast5 > 04_read_data/read_data.tsv
 
 for f in $read_files; do
+    # 末尾のfastq.gzかfasta.gz削除
     set=${f%.fastq.gz}
     set=${set%.fasta.gz}
 
