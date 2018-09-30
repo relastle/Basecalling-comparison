@@ -20,13 +20,13 @@
 #   * illumina_1.fastq.gz illumina_2.fastq.gz: Illumina reads for the same sample
 
 # Set this to the desired number of threads (for alignment and polishing).
-threads=32
+threads=10
 
 # Set this to the directory containing the Python scripts (e.g. read_length_identity.py).
 python_script_dir=/path/to/python_scripts
 
 # Set the full path to Nanopolish here.
-nanopolish_exec_dir=/path/to/nanopolish
+nanopolish_exec_dir=~/work/nanopore/Basecalling-comparison
 
 # Set the paths to Medaka and Pomoxis venv activate files
 medaka=/path/to/medaka/venv/bin/activate
