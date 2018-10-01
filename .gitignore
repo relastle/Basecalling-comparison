@@ -4,7 +4,9 @@ plots/
 data*/
 gh-md-toc
 
+.mypy_cache
 read_id_to_fast5
+
 01_raw_fast5
 02_basecalled_reads
 02_basecalled_reads.tmp
