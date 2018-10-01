@@ -138,7 +138,7 @@ for f in $read_files; do
     echo "--------------------------------------------------------------------------------"
     python3 "$python_script_dir"/chop_up_assembly.py $assembly 10000 > $assembly_pieces
     minimap2 -k12 -t $threads -c ${reference} $assembly_pieces > $assembly_alignment
-    python3 ../read_length_identity.py $assembly_pieces $assembly_alignment > $assembly_data
+    python3 "$python_script_dir"/read_length_identity.py $assembly_pieces $assembly_alignment > $assembly_data
     rm $assembly_pieces $assembly_alignment
 
     printf "\n\n\n\n"
