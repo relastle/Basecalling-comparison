@@ -23,13 +23,13 @@
 threads=10
 
 # Set this to the directory containing the Python scripts (e.g. read_length_identity.py).
-python_script_dir=/path/to/python_scripts
+python_script_dir=./
 
 # Set the full path to Nanopolish here.
-nanopolish_exec_dir=~/work/nanopore/Basecalling-comparison
+nanopolish_exec_dir=/opt/nanopolish
 
 # Set the paths to Medaka and Pomoxis venv activate files
-medaka=/path/to/medaka/venv/bin/activate
+medaka=${MEDAKA_ACTIVATION_PATH}
 pomoxis=/path/to/pomoxis/venv/bin/activate
 
 # If you want to run this script on all read files in the 02_basecalled_reads directory, leave
