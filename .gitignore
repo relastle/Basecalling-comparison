@@ -6,6 +6,7 @@ gh-md-toc
 
 01_raw_fast5
 02_basecalled_reads
+02_basecalled_reads.tmp
 03_read_names_fixed
 04_read_data
 05_trimmed_reads
