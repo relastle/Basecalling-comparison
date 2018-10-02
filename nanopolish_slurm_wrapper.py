@@ -91,9 +91,9 @@ def main():
         variants_command = nanopolish_exec + ' variants --consensus polished.' + polish_range + '.fa -w ' + polish_range + ' -r ' + read_filename + ' -b reads.sorted.bam -g ' + assembly_filename + ' -t 2 --min-candidate-frequency 0.1'
         if methylation_aware:
             variants_command += ' --methylation-aware=dcm,dam'
-        sbatch_command = 'sbatch -p sysgen --nodes=1 --job-name=' + job_name + ' --ntasks=1 --cpus-per-task=2 --mem=4096 --time=0-4:0:00 --wrap "' + variants_command + '"'
-        print(sbatch_command)
-        subprocess.run(sbatch_command, shell=True, check=True)
+        #  sbatch_command = 'sbatch -p sysgen --nodes=1 --job-name=' + job_name + ' --ntasks=1 --cpus-per-task=2 --mem=4096 --time=0-4:0:00 --wrap "' + variants_command + '"'
+        #  print(sbatch_command)
+        subprocess.run(variants_command, shell=True, check=True)
 
     # Wait for jobs to finish
     start_time = time.time()
