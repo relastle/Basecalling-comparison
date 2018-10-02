@@ -30,7 +30,7 @@ nanopolish_exec_dir=/opt/nanopolish
 
 # Set the paths to Medaka and Pomoxis venv activate files
 medaka=${MEDAKA_ACTIVATION_PATH}
-pomoxis=/path/to/pomoxis/venv/bin/activate
+pomoxis=${POMOXIS_ACTIVATION_PATH}
 
 illumina_1=./data/illumina/illumina_1.fastq.gz
 illumina_2=./data/illumina/illumina_2.fastq.gz
