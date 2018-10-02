@@ -96,15 +96,15 @@ def main():
         subprocess.run(variants_command, shell=True, check=True)
 
     # Wait for jobs to finish
-    start_time = time.time()
-    while True:
-        time.sleep(60)
-        remaining_jobs = get_remaining_nanopolish_jobs(job_prefix)
-        if remaining_jobs == 0:
-            print('All Nanopolish jobs are done!')
-            break
-        elapsed_time = str(int(round(time.time() - start_time)))
-        print('Waiting for Nanopolish jobs to finish... (' + elapsed_time + ' sec elapsed, ' + str(remaining_jobs) + ' jobs remaining)', flush=True)
+    #  start_time = time.time()
+    #  while True:
+    #      time.sleep(60)
+    #      remaining_jobs = get_remaining_nanopolish_jobs(job_prefix)
+    #      if remaining_jobs == 0:
+    #          print('All Nanopolish jobs are done!')
+    #          break
+    #      elapsed_time = str(int(round(time.time() - start_time)))
+    #      print('Waiting for Nanopolish jobs to finish... (' + elapsed_time + ' sec elapsed, ' + str(remaining_jobs) + ' jobs remaining)', flush=True)
 
     # Make empty ranges, if necessary
     incomplete_ranges = [x for x in polish_ranges if not os.path.isfile('polished.' + x + '.fa')]
