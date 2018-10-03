@@ -154,7 +154,7 @@ for f in $read_files; do
     fi
     gunzip -c "$all_reads_fixed_names" > $temp_reads
     source $medaka
-    medaka_consensus -i $temp_reads -d $assembly -o "$medaka_assembly_dir"/"$set"_medaka -p $pomoxis -t $threads
+    medaka_consensus -i $temp_reads -d $assembly -o "$medaka_assembly_dir"/"$set"_medaka -t $threads
     deactivate
     cp "$medaka_assembly_dir"/"$set"_medaka/consensus.fasta "$medaka_assembly"
     rm $temp_reads
