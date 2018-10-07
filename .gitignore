@@ -8,6 +8,7 @@ gh-md-toc
 read_id_to_fast5
 
 01_raw_fast5
+01_raw_fast5.part
 02_basecalled_reads
 02_basecalled_reads.tmp
 03_read_names_fixed
