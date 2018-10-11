@@ -27,7 +27,9 @@ read_id_to_fast5
 15_combined_polish
 16_combined_polish_data
 
+01.1_raw_fast5_splited.part/
 01.1_raw_fast5_splited/
 02.1_halcyon_inferred/
+02.1_halcyon_inferred.part/
 
 temp_rebaler_1243
