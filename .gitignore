@@ -10,6 +10,7 @@ read_id_to_fast5
 01_raw_fast5
 01_raw_fast5.part
 01_raw_fast5.org
+01_raw_fast5.3000_500/
 
 02_basecalled_reads
 02_basecalled_reads_fastq
