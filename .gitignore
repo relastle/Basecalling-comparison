@@ -15,6 +15,8 @@ read_id_to_fast5
 02_basecalled_reads
 02_basecalled_reads_fastq
 02_basecalled_reads.tmp
+02_basecalled_reads.3000_500/
+
 03_read_names_fixed
 04_read_data
 05_trimmed_reads
