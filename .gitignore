@@ -17,6 +17,7 @@ read_id_to_fast5
 02_basecalled_reads.tmp
 02_basecalled_reads.3000_500/
 02_basecalled_reads.merge/
+02_basecalled_reads_non_intersection/
 
 03_read_names_fixed
 04_read_data
