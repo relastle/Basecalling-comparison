@@ -2,15 +2,13 @@
 Get intersection of input fasta files by their IDs
 '''
 
-import sys
 import argparse
 from glob import glob
 import os
 from typing import Any, List  # noqa
 
-sys.path.append('../Halcyon/scripts/ml/input_data')
 
-from fasta_fetcher import (  # noqa
+from halcyon.ml.input_data.fasta_fetcher import (  # noqa
         FastaFetcher,
         FastaFetcherGroundTruth,
         FastaFetcherScrappie,
@@ -41,7 +39,7 @@ def main() -> None:
         fetchers.append(FastaFetcherGroundTruth(path))
     print(fetchers)
 
-    fasta_liens_lst = [
+    fasta_lines_lst = [
             [] for i in range(len(fetchers))
             ]  # type: List[List[str]]
 
@@ -51,12 +49,12 @@ def main() -> None:
         if len(seqs) == 0:
             continue
         for i, seq in enumerate(seqs):
-            fasta_liens_lst[i].append('>{}'.format(k))
-            fasta_liens_lst[i].append(seq)
+            fasta_lines_lst[i].append('>{}'.format(k))
+            fasta_lines_lst[i].append(seq)
     for i, fasta_path in enumerate(fasta_paths):
         fasta_name = os.path.basename(fasta_path)
         with open(os.path.join(args.output_dir, fasta_name), 'w') as f:
-            for line in fasta_liens_lst[i]:
+            for line in fasta_lines_lst[i]:
                 f.write(line+'\n')
     return
 
