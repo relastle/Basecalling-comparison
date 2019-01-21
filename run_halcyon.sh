@@ -1,7 +1,7 @@
 python3 ../Halcyon/python/infer/infer.py \
     -i ./01_raw_fast5 -o ./02_basecalled_reads_non_intersection/halcyon.fasta \
     --config ../Halcyon/python/train/ckpt/restore/2019-01-12_19-33-34_middle_schesam0.3/config.json \
-    -w 10 \
+    -w 30 \
     -f \
     -t 10 \
     --gpus 1\
